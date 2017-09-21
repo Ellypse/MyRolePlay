@@ -54,9 +54,9 @@ function mrp:CreateEditFrames()
 		mef.sf.editbox:EnableMouse(true)
 		mef.sf.editbox:SetAutoFocus(false)
 		mef.sf.editbox:SetMultiLine(true)
+		mef.sf.editbox:SetFontObject( "GameFontHighlight" )
 		-- Ellypse: use our 7.3 workaround on this multiline editbox
 		mrp:Workaround7_3EditBoxBug(mef.sf.editbox)
-		mef.sf.editbox:SetFontObject( "GameFontHighlight" )
 		mef.sf:SetScrollChild( mef.sf.editbox )
 
 
