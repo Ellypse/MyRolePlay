@@ -27,6 +27,9 @@ function mrp:AddMRPTab()
 			ToggleCharacter( "MyRolePlayCharacterFrame" )
 			PlaySound(841) -- I have no idea *why* it does this twice, but it does sound louder when you do
 		end )
+		
+		-- Ellypse: Sync tab ID and frame ID to have the correct selected state behavior in character frame
+		MyRolePlayCharacterFrame:SetID(CharacterFrame.numTabs+1);
 
 		-- Add our subframe to the list of frames
 		tinsert( CHARACTERFRAME_SUBFRAMES, "MyRolePlayCharacterFrame" )
