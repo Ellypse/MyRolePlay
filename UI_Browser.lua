@@ -171,8 +171,6 @@ function mrp:CreateBrowseFrame()
 		bfa.sf.editbox:SetAutoFocus(false)
 		bfa.sf.editbox:SetMultiLine(true)
 		bfa.sf.editbox:SetFontObject( "GameFontHighlight" )
-		-- Ellypse: use our 7.3 workaround on this multiline editbox
-		mrp:Workaround7_3EditBoxBug(bfa.sf.editbox)
 		bfa.sf:SetScrollChild( bfa.sf.editbox )
 
 
@@ -238,8 +236,6 @@ function mrp:CreateBrowseFrame()
 		bfb.sf.editbox:SetAutoFocus(false)
 		bfb.sf.editbox:SetMultiLine(true)
 		bfb.sf.editbox:SetFontObject( "GameFontHighlight" )
-		-- Ellypse: use our 7.3 workaround on this multiline editbox
-		mrp:Workaround7_3EditBoxBug(bfb.sf.editbox)
 		bfb.sf:SetScrollChild( bfb.sf.editbox )
 
 

@@ -71,7 +71,9 @@ end
 -- but that's still better than insert text in a different line...
 function mrp:Workaround7_3EditBoxBug(editboxFrame)
 	-- Ellypse: Workaround 7.3 bug with editboxes and text cursor being misaligned
-	local fontPath = editboxFrame:GetFont()
-	editboxFrame:SetFont(fontPath, 12 * editboxFrame:GetEffectiveScale())
 	editboxFrame:SetIgnoreParentScale(true)
+	local fontPath = editboxFrame:GetFont()
+	local effectiveScale = editboxFrame:GetParent():GetEffectiveScale();
+	editboxFrame:SetFont(fontPath, 12 * effectiveScale)
+	editboxFrame:SetWidth(editboxFrame:GetWidth() * effectiveScale);
 end
