@@ -61,19 +61,3 @@ function mrp:UnitNameWithRealm( unit )
                 return nil
         end
 end
-
--- Ellypse: This is a workaround for a bug introduced in patch 7.3 with
--- the editboxes where the text cursor is misaligned with the text.
--- This workaround is taken from Infus' wakround on the WeakAuras add-on.
--- By ignoring the UI scale and manually scaling the font size,
--- the cursor is correctly placed on the line the user is editing,
--- Note that margins will appear at the bottom of the editbox,
--- but that's still better than insert text in a different line...
-function mrp:Workaround7_3EditBoxBug(editboxFrame)
-	-- Ellypse: Workaround 7.3 bug with editboxes and text cursor being misaligned
-	editboxFrame:SetIgnoreParentScale(true)
-	local fontPath = editboxFrame:GetFont()
-	local effectiveScale = editboxFrame:GetParent():GetEffectiveScale();
-	editboxFrame:SetFont(fontPath, 12 * effectiveScale)
-	editboxFrame:SetWidth(editboxFrame:GetWidth() * effectiveScale);
-end
