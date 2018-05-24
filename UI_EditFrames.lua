@@ -271,7 +271,7 @@ function mrp:CreateEditFrames()
 		mef.cb:SetPoint( "CENTER", 0, 50 )
 		UIDropDownMenu_SetWidth( mef.cb, 205 )
 
-		mef.cb.dd = CreateFrame( "Frame", "MyRolePlayComboEditFrameComboBoxDropDown", mef, "UIDropDownListTemplate" )
+		mef.cb.dd = CreateFrame( "Button", "MyRolePlayComboEditFrameComboBoxDropDown", mef, "UIDropDownListTemplate" )
 
 		MyRolePlayComboEditFrameComboBoxButton:SetScript( "OnClick", function( self )
 			if DropDownList1:IsVisible() then

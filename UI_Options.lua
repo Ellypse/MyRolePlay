@@ -154,7 +154,7 @@ function mrp:CreateOptionsPanel()
 		f.ttstyle.capt:SetPoint( "BOTTOMLEFT", f.ttstyle, "TOPLEFT", 16, 3 )
 		f.ttstyle.capt:SetText( L["Tooltip style:"] )
 
-		f.ttstyle.dd = CreateFrame( "Frame", "MyRolePlayOptionsPanel_TTStyleDropDown", f, "UIDropDownListTemplate" )
+		f.ttstyle.dd = CreateFrame( "Button", "MyRolePlayOptionsPanel_TTStyleDropDown", f, "UIDropDownListTemplate" )
 		MyRolePlayOptionsPanel_TTStyleButton:SetScript( "OnClick", function( self )
 			if DropDownList1:IsVisible() then
 				DropDownList1:Hide()
@@ -232,7 +232,7 @@ function mrp:CreateOptionsPanel()
 		f.ahunit.capt:SetPoint( "BOTTOMLEFT", f.ahunit, "TOPLEFT", 16, 3 )
 		f.ahunit.capt:SetText( L["Display height in…"] )
 
-		f.ahunit.dd = CreateFrame( "Frame", "MyRolePlayOptionsPanel_HeightUnitDropDown", f, "UIDropDownListTemplate" )
+		f.ahunit.dd = CreateFrame( "Button", "MyRolePlayOptionsPanel_HeightUnitDropDown", f, "UIDropDownListTemplate" )
 		MyRolePlayOptionsPanel_HeightUnitButton:SetScript( "OnClick", function( self )
 			if DropDownList1:IsVisible() then
 				DropDownList1:Hide()
@@ -264,7 +264,7 @@ function mrp:CreateOptionsPanel()
 		f.awunit.capt:SetPoint( "BOTTOMLEFT", f.awunit, "TOPLEFT", 16, 3 )
 		f.awunit.capt:SetText( L["Display weight in…"] )
 
-		f.awunit.dd = CreateFrame( "Frame", "MyRolePlayOptionsPanel_WeightUnitDropDown", f, "UIDropDownListTemplate" )
+		f.awunit.dd = CreateFrame( "Button", "MyRolePlayOptionsPanel_WeightUnitDropDown", f, "UIDropDownListTemplate" )
 		MyRolePlayOptionsPanel_WeightUnitButton:SetScript( "OnClick", function( self )
 			if DropDownList1:IsVisible() then
 				DropDownList1:Hide()

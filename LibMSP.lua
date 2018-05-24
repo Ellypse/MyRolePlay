@@ -208,7 +208,7 @@ msp.dummyframe:SetScript( "OnEvent", msp_onevent )
 msp.dummyframe:RegisterEvent( "CHAT_MSG_ADDON" )
 
 for prefix, handler in pairs( MSP_INCOMING_HANDLER ) do
-	RegisterAddonMessagePrefix( prefix )
+	C_ChatInfo.RegisterAddonMessagePrefix( prefix )
 end
 
 --[[
