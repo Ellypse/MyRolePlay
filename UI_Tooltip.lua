@@ -164,7 +164,7 @@ function mrp:UpdateTooltip( player, unit )
 	local afk = UnitIsAFK( unit )
 	local dnd = UnitIsDND( unit )
 	local level = UnitLevel( unit )
-	local class, classunloc = UnitClassBase( unit )
+	local class, classunloc = UnitClass( unit )
 	local race = UnitRace( unit ) or ""
 	local connected = UnitIsConnected( unit )
 	local inphase = UnitInPhase( unit )

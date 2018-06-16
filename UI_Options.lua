@@ -218,7 +218,7 @@ function mrp:CreateOptionsPanel()
 		end
 		BlizzardOptionsPanel_RegisterControl( f.biog, f )
 
-		f.ahunit = CreateFrame( "Frame", "MyRolePlayOptionsPanel_HeightUnit", f, "UIDropDownMenuTemplate" )
+		f.ahunit = CreateFrame( "Button", "MyRolePlayOptionsPanel_HeightUnit", f, "UIDropDownMenuTemplate" )
 		f.ahunit:SetPoint( "TOPLEFT", f.biog, "BOTTOMLEFT", -16, -24 )
 		f.ahunit.type = CONTROLTYPE_DROPDOWN
 		f.ahunit.isoption = "HeightUnit"
