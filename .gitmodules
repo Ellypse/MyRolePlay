@@ -1,0 +1,3 @@
+[submodule "LibMSP"]
+	path = LibMSP
+	url = https://github.com/Ellypse/LibMSP

@@ -6,8 +6,8 @@
 ## Notes: Lets you share roleplaying profile information (such as last names and descriptions) with other roleplayers using this, or a compatible, AddOn.
 ## SavedVariablesPerCharacter: mrpSaved, mdbSaved
 MyRolePlay.lua
-ChatThrottleLib.lua
-LibMSP.lua
+LibMSP/ChatThrottleLib.lua
+LibMSP/LibMSP.lua
 Locale.lua
 Locale_enGB.lua
 Locale_enUS.lua
