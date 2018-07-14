@@ -1,6 +1,6 @@
 ## Interface: 80000
 ## Title: MyRolePlay
-## Version: 8.0.1.415
+## Version: @project-version@
 ## Author: Etarna Moonshyne, Ellypse
 ## Email: etarna@moonshyne.org, ellypse@totalrp3.info
 ## Notes: Lets you share roleplaying profile information (such as last names and descriptions) with other roleplayers using this, or a compatible, AddOn.
