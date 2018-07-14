@@ -7,6 +7,16 @@
 
 -- MyRolePlay: Detect any other MSP AddOn, and bail out in case of imminent conflict
 
+-- Patch 8.0.1 alert
+local displayBuild, _, _, interfaceVersionNumber = GetBuildInfo()
+
+if interfaceVersionNumber < 80000 then
+	error(([[This version of MyRolePlay only supports patch 8.0 Battle for Azeroth, but you are running patch %s.
+
+Please downgrade to the latest version available for this patch.
+If you are using the Twitch client, make sure to set your release type preferences to Release instead of Beta/Alpha.]]):format(displayBuild))
+end
+
 mrp = {}
 
 mrp.Version = GetAddOnMetadata( "MyRolePlay", "Version" )
