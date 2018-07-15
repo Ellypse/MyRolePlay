@@ -20,6 +20,10 @@ end
 mrp = {}
 
 mrp.Version = GetAddOnMetadata( "MyRolePlay", "Version" )
+--@debug@
+-- Debug mode is enable when the add-on has not been packaged by Curse
+mrp.Version = "8.0.1.415"
+--@end-debug@
 mrp.Build = tonumber( strmatch( mrp.Version, "%d+%.%d+%.%d+%.(%d+)" ) )
 mrp.VersionString = "MyRolePlay/"..mrp.Version
 mrp.Alpha = GetAddOnMetadata( "MyRolePlay", "X-Test" ) == "Alpha"
