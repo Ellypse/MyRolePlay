@@ -12,7 +12,7 @@ function mrp:TargetChanged()
 	end
 	if UnitIsUnit( "player", "target" ) then
 		MyRolePlayButton:Show()
-	elseif UnitIsPlayer( "target" ) and UnitIsFriend( "player", "target" ) then
+	elseif UnitIsPlayer( "target" ) then
 		if msp.char[ mrp:UnitNameWithRealm( "target" ) ].supported then
 			MyRolePlayButton:Show()
 		else
