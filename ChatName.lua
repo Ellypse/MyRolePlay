@@ -20,7 +20,7 @@ local RPEVENTS = {
 }
 
 local function mrp_GetColoredName( event, message, sender, language, arg4, arg5, arg6, arg7, arg8, arg9, arg10, lineid, guid )
-	if mrpSaved.Options.ShowRPNamesInChat and RPEVENTS[ event ] and sender and sender ~= UNKNOWN and msp.char[ sender ].supported and msp.char[ sender ].time.NA and mrp.DisplayChat.NA( msp.char[ sender ].field.NA ) ~= "" and mrp.DisplayChat.NA( msp.char[ sender ].field.NA ) ~= sender then
+	if mrpSaved.Options.ShowRPNamesInChat and RPEVENTS[ event ] and sender and sender ~= UNKNOWN and msp.char[ sender ].supported and msp.char[ sender ].field.NA and mrp.DisplayChat.NA( msp.char[ sender ].field.NA ) ~= "" and mrp.DisplayChat.NA( msp.char[ sender ].field.NA ) ~= sender then
 		if ChatTypeInfo[ strsub( event, 10 ) or "" ] and ChatTypeInfo[ strsub( event, 10 ) or "" ].colorNameByClass and guid ~= "" then
 			return format( "%s%s|r", RAID_CLASS_COLORS_CODE[ ( select( 2, GetPlayerInfoByGUID( guid ) ) ) ], mrp.DisplayChat.NA( msp.char[ sender ].field.NA ) )
 		else
