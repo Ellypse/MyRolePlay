@@ -1,3 +1,10 @@
+# Changelog for version 8.0.1.416
+
+## Fixes
+
+- Fixed an issue that would prevent custom RP names from appearing in chat. 
+- Fixed an issue that would prevent the target frame button to appear on Battle.net friends from the other faction.
+
 # Changelog for version 8.0.1.415
 
 ## Updated to the new Mary Sue Protocol

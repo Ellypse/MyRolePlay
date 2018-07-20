@@ -30,7 +30,7 @@ local function mrp_TargetEvent( this, event, addon )
 end
 
 function mrp_MSPButtonCallback( player )
-	if UnitIsPlayer( "target" ) and UnitIsFriend( "player", "target" ) and mrp:UnitNameWithRealm( "target" ) == player then
+	if UnitIsPlayer( "target" ) and mrp:UnitNameWithRealm( "target" ) == player then
 		MyRolePlayButton:Show()
 	end
 end
