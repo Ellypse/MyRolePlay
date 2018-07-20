@@ -21,12 +21,8 @@ local function mrp_MouseoverEvent( this, event, addon )
 		if UnitIsUnit( "player", "mouseover" ) then
 			mrp:UpdateTooltip( UnitName("player"), "player" )
 		elseif UnitIsPlayer("mouseover") then
-			if UnitIsFriend("player", "mouseover") then
-				msp:Request( mrp:UnitNameWithRealm("mouseover") )
-				mrp:UpdateTooltip( mrp:UnitNameWithRealm("mouseover"), "mouseover" )
-			else
-				mrp:UpdateTooltip( mrp:UnitNameWithRealm("mouseover"), "mouseover" )
-			end
+			msp:Request( mrp:UnitNameWithRealm("mouseover") )
+			mrp:UpdateTooltip( mrp:UnitNameWithRealm("mouseover"), "mouseover" )
 		else
 			mrp.TTShown = nil
 		end

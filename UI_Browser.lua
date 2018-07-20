@@ -505,7 +505,7 @@ function mrp:Show( player )
 		if UnitIsUnit("player", "target") then
 			--mrp:RequestForBF( UnitName("player") )
 			mrp:UpdateBrowseFrame( player )
-		elseif UnitIsPlayer("target") and UnitIsFriend("player", "target") then
+		elseif UnitIsPlayer("target") then
 			if msp.char[ mrp:UnitNameWithRealm("target") ].supported == false then
 				mrp:Print( L["%s doesn’t appear to have an addon which supports MSP."], mrp:UnitNameWithRealm("target") )
 			else
