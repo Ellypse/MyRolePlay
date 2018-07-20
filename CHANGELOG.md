@@ -1,3 +1,10 @@
+# Changelog for version 8.0.1.417
+
+## Fixes
+
+- Fixed an issue introduced with today's hotfixes that would prevent Battle.net communications from working.
+- Fixed an issue that would prevent the tooltip from displaying for Battle.net friends.
+
 # Changelog for version 8.0.1.416
 
 ## Fixes
