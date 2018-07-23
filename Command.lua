@@ -117,6 +117,9 @@ mrp.Commands = {
 		elseif para ~= "" then
 			local cmd, name = strsplit(" ", strtrim(input), 2)
 			name = strtrim( name )
+			if not(name:match("%-")) then
+				name = (name .. "-" .. string.gsub(GetRealmName(), " ", ""))
+			end
 			mrp:Print( L["Requesting details from %s."], name )
 			mrp:Show( name )
 		else
